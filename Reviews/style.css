@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap');
+
+body, html{
+    font-family: 'Open Sans', sans-serif;
+    background-color: whitesmoke;
+}
+
+nav{
+    display: flex;
+    justify-content: center;
+}
+
+nav h1 hr{
+    width: 40%;
+    margin: 5px auto;
+    border: 2px solid dodgerblue;
+    border-radius: 10px;
+}
+
+.root{
+    display: flex;
+    justify-content: center;
+}
+
+.container{
+    background-color: white;
+    display: none;
+    width: 600px;
+    padding: 10px;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 0 5px 10px lightgray;
+    border-radius: 10px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.container img{
+    display: block;
+    width: 150px;
+    border-radius: 50%;
+    margin: 10px;
+}
+
+.container .author{
+    font-size: 16px;
+    letter-spacing: 2px;
+    margin: 0;
+}
+
+.container .job{
+    margin: 2px;
+    font-size: 12px;
+    text-transform: uppercase;
+    font-weight: 400;
+    color: dodgerblue
+}
+
+.container .info {
+    text-align: center;
+    width: 90%;
+    margin: 10px;
+    font-size: 15px;
+}
+
+.arrow-flex{
+    display: flex;
+}
+
+.arrow{
+    font-size: 30px;
+    margin: 0 10px;
+    cursor: pointer;
+    color: dodgerblue;
+    user-select: none;
+}
+
+.arrow:hover{
+    font-weight: bold;
+}
+
+.btn-container{
+    margin-top: 5px;
+    margin-bottom: 10px;
+}
+
+.random-btn{
+    border-radius: 10px;
+    border: 1px solid dodgerblue;
+    padding: 5px 10px;
+    cursor: pointer;
+    color: white;
+    background-color: dodgerblue;
+    transition: .1s;
+
+}
+
+.random-btn:hover{
+    transform: scale(1.1);
+}
+
+.flex{
+    display: flex;
+}

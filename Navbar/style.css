@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap');
+
+body{
+    margin: 0;
+    background-color: #ddd;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.nav-header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-center{
+    padding: 10px 10px;
+    background-color: white;
+}
+
+.logo{
+    padding: 5px;
+}
+
+.menu-icon{
+    cursor: pointer;
+    transition: .5s;
+    font-size: 16px;
+    padding: 2.5px;
+}
+
+.rotate{
+    transform: rotate(180deg);
+    
+}
+
+.links{
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    background-color: white;
+}
+
+.links{
+    height: 0;
+    overflow: hidden;
+    transition: .5s;
+}
+
+.show-links{
+    height: 180px;
+}
+
+.links li{
+    padding: 10px 15px;
+    font-size: 18px;
+    transition: .5s;
+    color: black;
+    border-bottom: 1px solid #ddd;
+}
+
+.links li:hover{
+    background-color: rgb(228, 233, 241);
+    cursor: pointer;
+    color: white;
+}
+
+.links li a{
+    text-decoration: none;
+    color: black;
+}
+
+.social-icons{
+    padding: 0;
+    display: none;
+    margin: 0;
+}
+
+.fa-brands{
+    color: dodgerblue;
+}
+
+@media screen and (min-width: 800px){
+    .links{
+        display: flex;
+        height: auto;
+    }
+
+    .links li{
+        padding: 0;
+        margin: 0 20px;
+        border-color: white;
+    }
+
+    nav{
+        display: flex;
+        align-items: center;
+        background-color: white;
+        justify-content: space-between;
+    }
+
+    .menu-icon{
+        display: none;
+    }
+
+    .social-icons{
+        display: block;
+        margin: 10px;
+    }
+    
+    .social-icons li{
+        display: inline-block;
+        padding: 0 10px;
+    }
+
+    .links li:hover{
+        background-color: white;
+    }
+
+    .links li a:hover{
+        color: rgb(162, 191, 230);
+        cursor: pointer;
+    }
+}
